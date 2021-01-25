@@ -1,0 +1,499 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #0a33ab;
+    padding: 8px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.bodyTitle {
+    position: fixed;
+    font-weight: 300;
+    font-size: 26px;
+    text-align: center;
+    color: #f0dbd2;
+    right: 0;
+    left: 0;
+    top: 10px;
+    margin: 0;
+}
+
+.hamburgerList {
+    position: fixed;
+    display: flex;
+    right: 12px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.hambergerDetail {
+    display: none;
+    position: fixed;
+    background: #1d72f9;
+    height: 100vh;
+    width: 300px;
+    z-index: 1;
+    top: 0;
+    right: 0;
+}
+
+.hambergerSelect {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    padding-top: 50px;
+}
+
+.hambergerSelect .hamburgerList {
+    position: absolute;
+    display: flex;
+    left: 12px;
+    top: 15px;
+}
+
+.hambergerSelect a {
+    color: #f9c73d;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.hambergerSelect a:hover {
+    color: #f3a297;
+}
+
+.hambergerSelect i {
+    font-size: 20px;
+}
+
+.hambergerSelect i {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.chicken {
+    position: fixed;
+    bottom: 2px;
+}
+
+.container {
+    background-color: #f0dbd2;
+    width: calc(100% - 24px);
+    height: calc(100vh - 72px);
+    top: 60px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    overflow: auto
+}
+
+.container::-webkit-scrollbar {
+    /* scroll bar 背景 */
+    display: none;
+}
+
+.container ::-webkit-scrollbar-thumb {
+    /* scroll bar 本人 */
+    background-color: transparent;
+}
+
+.tomatoIndex,
+.tomatoList,
+.tomatoAnalytic {
+    min-height: 86vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tomatoIndex {
+    background-image: url(Tomato_img/tomatoIndexBG.png);
+    justify-content: space-around;
+}
+
+.tomatoList {
+    background-image: url(Tomato_img/tomatoListBG.png);
+    flex-direction: column;
+}
+
+.tomatoAnalytic {
+    background-image: url(Tomato_img/tomatoAnalyticBG.png);
+    flex-direction: column;
+}
+
+.tomatoList .content,
+.tomatoAnalytic .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.indexLeft,
+.indexRight {
+    width: 45%;
+    min-width: 400px;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 5px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+/* icon */
+
+.iconUndo {
+    background: url(Tomato_img/icon.png) no-repeat -6px -6px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.iconDone {
+    background: url(Tomato_img/icon.png) no-repeat -39px -6px;
+    width: 20px;
+    height: 20px;
+}
+
+.iconDoing {
+    background: url(Tomato_img/icon.png) no-repeat 0px -40px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.iconDoneY {
+    background: url(Tomato_img/icon.png) no-repeat -130px -6px;
+    width: 20px;
+    height: 20px;
+}
+
+.icontodo {
+    background: url(Tomato_img/icon.png) no-repeat -67px -3px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.icontimes {
+    background: url(Tomato_img/icon.png) no-repeat -200px -4px;
+    width: 20px;
+    height: 20px;
+}
+
+
+/* tomatoIndex */
+
+.tomatoIndex h2 {
+    color: #0a33ab;
+    font-weight: 300;
+    font-size: 26px;
+}
+
+.add-input {
+    color: #0a33ab;
+    font-weight: 400;
+    font-size: 20px;
+    border: 0;
+    background-color: #ffffff;
+    width: calc(100% - 36px);
+    padding: 5px;
+}
+
+.add-input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #0a33ab;
+}
+
+.add-input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #0a33ab;
+}
+
+.add-input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #0a33ab;
+}
+
+.add-input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #0a33ab;
+}
+
+.add-btn {
+    color: #0a33ab;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #ffffff;
+    border: 0;
+    border-left: #0a33ab 1px solid;
+    width: 30px;
+    padding: 5px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+.listToDo {
+    color: #0a33ab;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+.listToDo li {
+    justify-content: space-between;
+}
+
+h5 {
+    margin: 3px;
+    font-size: 20px;
+}
+
+.listBorder {
+    border-bottom: #0a33ab 1px solid;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.moreBTN {
+    color: #ffffff;
+    background-color: #0a33ab;
+    border: #0a33ab 1px solid;
+    padding: 5px 10px;
+    text-align: center;
+    position: relative;
+    margin-left: 80%;
+    cursor: pointer;
+}
+
+.moreBTN:hover {
+    color: #0a33ab;
+    background-color: transparent;
+}
+
+.listDone {
+    color: #0a33ab;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+.done {
+    color: #0a33ab;
+    border: #0a33ab 1px solid;
+    background-color: transparent;
+    padding: 5px 10px;
+}
+
+.listDone ul {
+    width: 100%;
+    border-top: #0a33ab 1px solid;
+    border-bottom: #0a33ab 1px solid;
+    margin-top: 5px;
+}
+
+.tomatoIndex .indexRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rolling {
+    -webkit-animation: rolling 5s infinite linear;
+    -moz-animation: rolling 5s infinite linear;
+    -o-animation: rolling 5s infinite linear;
+    animation: rolling 5s infinite linear;
+}
+
+@-webkit-keyframes rolling {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rolling {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes rolling {
+    from {
+        -o-transform: rotate(0deg);
+    }
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@keyframes rolling {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.clockBTN {
+    background-image: url(Tomato_img/playBTN.png);
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.clockBTN:focus {
+    outline: none;
+}
+
+.clockNumber {
+    display: flex;
+    align-items: flex-end;
+}
+
+.clockNumber h1 {
+    color: #f9c73d;
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+.reSetClock {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #f0dbd2;
+    cursor: pointer;
+}
+
+.doing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.doing h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0px 0px 0px 0px;
+}
+
+.doingText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.tomatoDot {
+    display: flex;
+}
+
+
+/* tomatoList */
+
+.tomatoList h2 {
+    color: #f9c73d;
+    font-size: 30px;
+    font-weight: 100;
+    padding-left: 50px;
+}
+
+.tomatoList .listDo {
+    color: #f9c73d;
+    margin-top: 10px;
+}
+
+.tomatoList .done {
+    color: #f9c73d;
+    border: #f9c73d 1px solid;
+}
+
+.tomatoList .listDone ul {
+    border-top: #f9c73d 1px solid;
+    border-bottom: #f9c73d 1px solid;
+}
+
+.tomatoList .listDone {
+    color: #f9c73d;
+}
+
+.tomatoList .listDone .listBorder {
+    border-bottom: #f9c73d 1px solid;
+}
+
+
+/* tomatoAnalytic */
+
+.tomatoAnalytic h2 {
+    color: #f9c73d;
+    font-size: 30px;
+    font-weight: 100;
+    padding-left: 50px;
+}
+
+.tomatoAnalytic h3 {
+    color: #0a33ab;
+    font-weight: 100;
+    background: #92c6fb;
+    padding: 0px 5px;
+}
+
+.TimesDiv p {
+    font-size: 20px;
+    color: #f0dbd2;
+    padding-left: 5px;
+    margin: 0px;
+}
+
+.TimesDiv h4 {
+    color: #92c6fb;
+    padding-left: 30px;
+    margin: 0px;
+}
+
+.TimesDiv span {
+    color: #f3a297;
+    font-size: 60px;
+}
+
+.lineBlue {
+    border-bottom: 1px solid #92c6fb;
+}
