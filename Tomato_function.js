@@ -9,7 +9,7 @@ $(function() {
     $('.date').text(todayText);
 
     // To Do List
-    showToDoListHTML(todoData);
+    showToDoListHTML(todoData.reverse());
 
     // chart
     showChartData();
@@ -56,7 +56,7 @@ function showToDoListHTML(todoData) {
     let listCount_done = 0;
     $('.listToDo ul').html('');
     $('.listDone ul').html('');
-    todoData.reverse()
+    todoData.reverse();
     for (let i in todoData) {
         if (todoData[i]['taskStatus'] == 0 && listCount_todo < 3) {
             $('.tomatoIndex .listToDo ul').append(`<li>
@@ -141,7 +141,9 @@ function undoClick() {
         showToDoListHTML(todoData);
         showDoingTaskHTML(todoData);
         showWorkTimes(tempWorkTimes);
+        window.location.hash = '#clocks';
     })
+    window.location.hash = '';
 }
 
 function doingClick() {
